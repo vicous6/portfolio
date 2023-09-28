@@ -1,0 +1,125 @@
+#homepage {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &>header {
+        grid-column: 1/3;
+
+        &>h1 {
+            text-align: center;
+        }
+    }
+
+    &>.container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        border-right: 1px solid black;
+
+
+
+        &>.box {
+            text-align: center;
+            width: 60%;
+            border: 3px solid #666;
+            background-color: #ddd;
+            border-radius: .5em;
+            padding: 10px;
+            cursor: move;
+            height: 10vh;
+        }
+
+        &>.box:last-child {
+            width: 80%;
+            height: 20vh;
+            background: white;
+            border: black 5px dotted;
+        }
+    }
+
+    &>#CV {
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        border: 1px solid black;
+        margin-top: 4vh;
+        border-radius: 20px;
+
+        &>h1 {
+            text-align: center;
+        }
+    }
+
+    &>#Studies {
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        border: 1px solid black;
+        margin-top: 4vh;
+        border-radius: 20px;
+
+        &>h1 {
+            text-align: center;
+        }
+    }
+
+    &>#Projects {
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        border: 1px solid black;
+        margin-top: 4vh;
+        border-radius: 20px;
+
+        &>h1 {
+            text-align: center;
+        }
+    }
+
+    &>#Machin {
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        border: 1px solid black;
+        margin-top: 4vh;
+        border-radius: 20px;
+
+        &>h1 {
+            text-align: center;
+        }
+
+    }
+
+    &>#Contact {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-top: 1px solid black;
+        grid-column: 1/3;
+
+        &>h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        &>#contactContainer {
+            &>form {
+                &>fieldset {
+                    &>label {}
+
+                    &>input {}
+                }
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.over {
+    background: blue;
+}
