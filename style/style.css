@@ -145,11 +145,11 @@ table {
   text-align: center;
 }
 #homepage > .container {
+  height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(40, 1fr);
   border-right: 1px solid black;
 }
 #homepage > .container > .box {
@@ -162,7 +162,21 @@ table {
   cursor: move;
   height: 10vh;
 }
+#homepage > .container > .box:nth-child(1) {
+  grid-column: 2/8;
+  grid-row: 2/8;
+}
+#homepage > .container > .box:nth-child(2) {
+  grid-column: 4/12;
+  grid-row: 4/12;
+}
+#homepage > .container > .box:nth-child(3) {
+  grid-column: 24/22;
+  grid-row: 24/22;
+}
 #homepage > .container > .box:last-child {
+  grid-column: 14/18;
+  grid-row: 14/18;
   width: 80%;
   height: 20vh;
   background: white;
