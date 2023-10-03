@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
 
@@ -15,40 +16,49 @@
         </h1>
     </header>
     <div class="container">
-        <div draggable="true" class="box">Machin</div>
+        <div draggable="true" class="box">Skills</div>
         <div draggable="true" class="box">Projects</div>
         <div draggable="true" class="box">Studies</div>
-        <div class="box inputDrag">CV</div>
+        <div draggable="true" class="box">test2</div>
+        <div draggable="true" class="box">test3</div>
+        <div draggable="true" class="box">test4</div>
+        <div class="box inputDrag">Liens-Utiles</div>
     </div>
 
-    <section id="CV" class="hidden section">
-        <h1>CV</h1>
-        <h2>Expriences Web</h2>
-        <ul>
-            <li>Stage Wordpress</li>
-            <li>Site Psychologue</li>
-        </ul>
-        <h3>Skills</h3>
-        <ul>
-            <li>Travail en équipe</li>
-            <li>Curieux</li>
-            <li>Pédagogue</li>
-        </ul>
-        <h4>Languages</h4>
-        <ul>
-            <li>PHP</li>
-            <li>JS</li>
-            <li>Pyhton</li>
-            <li>SQL</li>
-            <li>CSS/SASS</li>
+    <section id="Skills" class="hidden section">
+        <h1>Skills</h1>
 
-        </ul>
-        <h4>Frameworks</h4>
         <ul>
-            <li>Flask</li>
-            <li>Symfony</li>
-            <li>React</li>
-            <li></li>
+            <li>
+                <h4>Expriences Web</h4>
+                <p>Stage Wordpress</p>
+                <p>Freelance</p>
+            </li>
+
+            <li>
+                <h4>Skills</h4>
+                <p>Travail en équipe</p>
+                <p>Curieux</p>
+                <p>Pédagogue</p>
+            </li>
+
+            <li>
+                <h4>Languages</h4>
+                <p>PHP</p>
+                <p>JS</p>
+                <p>Pyhton</p>
+                <p>SQL</p>
+                <p>CSS/SASS</p>
+            </li>
+
+            <li>
+                <h4>Frameworks</h4>
+                <p>Flask</p>
+                <p>Symfony</p>
+                <p>React</p>
+            </li>
+
+
         </ul>
     </section>
     <section id="Projects" class="hidden section">
@@ -73,16 +83,57 @@
     <section id="Studies" class="hidden section">
         <h1>Studies</h1>
         <ul>
-            <li>20xx: Licence de Psychologie avec l'université Lumière Lyon 2</li>
-            <li>20xx: Master 1 Psychologie et Gérontologie à l'université de Tours</li>
-            <li>20xx: Bac+2 Dev Web Fullstack avec 3WA Rennes</li>
-            <li>20xx: Bac+3 parcour Pre-MSC avec Epitech Rennes</li>
+            <li>
+                <h3>2018</h3>
+                <p>Licence de Psychologie avec l'université Lumière Lyon 2</p>
+            </li>
+            <li>
+                <h3>2020</h3>
+                <p>Master 1 Psychologie et Gérontologie à l'Université de Tours</p>
+            </li>
+            <li>
+                <h3>2022</h3>
+                <p>Bac+2 Dev Web Fullstack avec 3WA Rennes</p>
+            </li>
+            <li>
+                <h3>2023</h3>
+                <p>Bac+3 parcours Pre-MSC avec Epitech Rennes</p>
+            </li>
         </ul>
     </section>
-    <section id="Machin" class="hidden section">
-        <h1>Machin</h1>
-    </section>
 
+    <section id="Liens-Utiles" class="hidden section">
+        <h1>Liens Utiles</h1>
+        <ul>
+            <li>
+
+                <a href="https://github.com/vicous6">GitHub
+                    <img src="link.png" alt="">
+                </a>
+            </li>
+            <li>
+
+                <a href="https://tryhackme.com/p/victor.oustiakin">TryHackme <img src="link.png" alt=""></a>
+            </li>
+            <li>
+
+                <a href="https://leetcode.com/vicous/">LeetCode <img src="link.png" alt=""></a>
+            </li>
+            <li>
+
+                <a href="https://www.linkedin.com/in/victor-oustiakine/">Linkedin <img src="link.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <section id="test2" class="hidden section">
+        <h1>test2</h1>
+    </section>
+    <section id="test3" class="hidden section">
+        <h1>test3</h1>
+    </section>
+    <section id="test4" class="hidden section">
+        <h1>test4</h1>
+    </section>
     <section id="Contact">
         <h2>Contact</h2>
         <div id="contactContainer">
@@ -93,19 +144,20 @@
                     <input type="text" name="firstName">
                 </fieldset>
                 <fieldset>
-                    <label for="lastName">First Name</label>
+                    <label for="lastName">Last Name</label>
                     <input type="text" name="lastName">
                 </fieldset>
                 <fieldset>
-                    <textarea name="message" id="" cols="30" rows="7"></textarea>
+                    <textarea name="message" id="" cols="30" rows="7" placeholder="Entrer voter message ici"></textarea>
                 </fieldset>
 
                 <input type="submit">
             </form>
         </div>
     </section>
+
 </body>
-<script src="DragDropTouch.js"></script>
+
 <script type="text/javascript" src="script.js"></script>
 
 </html>
